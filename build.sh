@@ -22,6 +22,7 @@ while IFS= read -r -d '' -u 9; do
     --pull \
     --build-arg "PACKAGE_NAME=${PACKAGE_NAME}" \
     --build-arg "JDK_DOWNLOAD_URL=${JDK_DOWNLOAD_URL}" \
+    --build-arg "REVISION=${TRAVIS_BUILD_NUMBER}" \
     -t "dotdeb-${PACKAGE_NAME}:${temp}" \
     -f "${REPLY}" \
     "targets/${temp}"
