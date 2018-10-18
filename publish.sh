@@ -17,11 +17,6 @@ for folder in targets/*; do
   consolelog "going into: ${folder}"
   IFS='/' read -r -a paths <<< "${folder}"
 
-  if [[ "${paths[1]}" == "bionic" ]]; then
-    consolelog "skipping ubuntu bionic for now" "error"
-    continue
-  fi
-
   for deb in "${folder}/"*.deb; do
     filename="${deb##*/}"
     name="${filename%*.deb}"
