@@ -8,7 +8,7 @@ ARG REVISION
 
 RUN apt-get update -qq && apt-get -y -qq install \
   libgl1-mesa-glx \
-  libgtk3.0-0 \
+  libgtk-3-0 \
   libxslt1.1 \
   libxtst6 \
   libxxf86vm1
