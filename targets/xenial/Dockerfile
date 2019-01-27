@@ -6,6 +6,9 @@ ARG PACKAGE_NAME
 ARG JDK_DOWNLOAD_URL
 ARG REVISION
 
+RUN apt-get -qq update && apt-get -y -qq install \
+      libgtk-3-0
+
 USER foobar
 WORKDIR /home/foobar
 

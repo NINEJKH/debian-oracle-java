@@ -6,13 +6,13 @@ ARG PACKAGE_NAME
 ARG JDK_DOWNLOAD_URL
 ARG REVISION
 
-RUN apt-get update -qq && apt-get -y -qq install \
-  libgl1-mesa-glx \
-  libgtk-3-0 \
-  libgtk2.0-0 \
-  libxslt1.1 \
-  libxtst6 \
-  libxxf86vm1
+RUN apt-get -qq update && apt-get -y -qq install \
+      libgl1-mesa-glx \
+      libgtk-3-0 \
+      libgtk2.0-0 \
+      libxslt1.1 \
+      libxtst6 \
+      libxxf86vm1
 
 USER foobar
 WORKDIR /home/foobar
