@@ -13,7 +13,7 @@ env:
     # BINTRAY_API_KEY
     - secure: "WTDpy+VJjdiMFm7NdD3rGICXTn0q656UpK7ugt9zSQKf8qaKpf+c6PopkQACB1LvbAcvCrgNQ8ygIqphZlRBvgQLsNG7YgVAAVI+T/E3stqhCmO1YToguXFQvTTR9SVfRGXUkH52rImtm8Vx8QFks0ki+mLq7Hv9i3AiaGhP8YjOj0WNwOiou89yZd+gi+V/oum/MoawIzxWtG7ZMCdzIOjZza62pn6AH+G/hX+oprEBi13jgj+JG76IHRcsBohkDwU0uiWD85FikHeMld3xz7ieyX7ltj+YPoxDgblxoNlZThKgkp0FmVwgumyR9SYwbabI+0qrF5DB2QFvzLk5ZBd8Kv4usodL8zu4VngCzZy3HGXQCvX8cUaqa8qOQg9VKu62kh0n6P0AGZlkc4+Amp4x6cM1L/vQhMz7vc9S5i6hTMpOMhy/gRpFFCVoY6eL58HWFDxmA/x2cI1bpDgKUWyntYzyux34ZV4x1dcEUuk2IIQIydaw5b2pk7rW9TNZpKXT/XarE3Ikjwgw6jVhLziqklfcLf/D2zJOm7F6v72JjevIT3wT906ow6wfvA1kJJ5xH/+cBJ61pMohcnTXzlmAJyIL344yXuGx22+HJwiOOWoDllnRyXSblHM1MYKyVAgQHLwviOLw/Gm/3v5NipLB3om1iChb6rJm9NylvK0="
   matrix:
-    - JDK_DOWNLOAD_URL=https://ftp.weheartwebsites.de/linux/java/jdk/jdk-8u231-linux-x64.tar.gz PACKAGE_NAME=oracle-java8-jdk
+    - JDK_DOWNLOAD_URL=https://ftp.weheartwebsites.de/linux/java/jdk/jdk-8u241-linux-x64.tar.gz PACKAGE_NAME=oracle-java8-jdk
     #- JDK_DOWNLOAD_URL=https://ftp.weheartwebsites.de/linux/java/jdk/jdk-7u80-linux-x64.tar.gz PACKAGE_NAME=oracle-java7-jdk
 
 before_install:
